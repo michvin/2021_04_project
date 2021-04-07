@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Instrument CP</title>
+    <script type="text/javascript" src="js/common.js"></script>
+    <link rel = "stylesheet" type = "text/css" href="css/styles.css" />
+</head>
+<body onload="periodicRun()">
+    <h1>Instrument Control Panel</h1>
+    Start Instrument
+    </p>
+    <label for="durationInSec">Run duration:</label>
+    <input type="text" id="durationInSec" name="durationInSec"><br>
+    <input type="button" value="Start Instrument" onclick="hitPostEndpoint();" />
+    <br>
+    <br>
+    <div id="Instrument_status_description">Instrument Status</div>
+    <div id="Instrument_status">Starting Monitor</div>
+    <input type="button" value="Get" onclick="hitGETEndpoint();" />
+    <!-- <input type="button" value="Start Instrument" onclick="hitPostEndpoint();" /> -->
+    <input type="button" value="periodic Run" onclick="periodicRun();" />
+</body>
+</html>
